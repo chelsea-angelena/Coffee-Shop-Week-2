@@ -1,0 +1,21 @@
+@mixin button-style {
+	text-align: center;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0);
+	width: 6.5rem;
+	height: 1.75rem;
+	font-size: 1.25rem;
+	border-radius: 3px;
+	text-decoration: none;
+	border: 1.5px solid rgba(0, 0, 0, 0.95);
+}
+@mixin button-background-style {
+	width: 6.5em;
+	height: 1.75rem;
+	background-color: #5bacc3;
+}
+@mixin button-link {
+	a:visited {
+		color: #fff;
+	}
+}

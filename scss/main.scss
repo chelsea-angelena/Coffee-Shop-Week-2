@@ -1,0 +1,270 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+:root {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: thin;
+	max-width: 1440px;
+	min-width: 300px;
+	overflow: hidden-scrollable;
+	margin: 0 auto;
+	height: auto;
+	box-sizing: border-box;
+}
+
+
+
+body {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: thin;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	display: block;
+}
+
+a:visited {
+	color: #fff;
+}
+
+$white: #fff;
+$lightgrey: #f7f7f7f7;
+$pink: #fff0ed;
+$lightblue: #5bacc3;
+$black: rgba(0, 0, 0, 0.95);
+
+@import '_nav-bar';
+
+header {
+	display: flex;
+	flex-direction: row;
+	height: 35rem;
+	width: 100%;
+	position: relative;
+	align-items: center;
+	background-color: $pink;
+	justify-content: center;
+}
+
+div .header__box-left,
+.header-column {
+	display: flex;
+	flex-direction: columnn;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	padding-left: 20%;
+}
+
+.header__title {
+	display: flex;
+	// flex-direction: columnn;
+	// flex-wrap: nowrap;
+	position: relative;
+	padding-left: 10rem;
+	align-self: center;
+	font-size: 2.25rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.header__text {
+	padding-left: 10rem;
+	padding-top: 1rem;
+	// display: flex;
+	align-items: center;
+	align-self: center;
+	width: 70%;
+	// flex-direction: column;
+	font-size: 0.9rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+.button-box {
+	width: 6rem;
+	margin: 24px;
+	height: 1.75rem;
+	position: relative;
+	width: 6rem;
+	height: 1.75rem;
+	border-radius: 4px;
+	background-color: #5bacc3;
+	padding-left: 0;
+	// align-self: flex-start;
+}
+
+.button.button-inner {
+	align-items: center;
+	justify-content: center;
+	width: 6rem;
+	height: 1.75rem;
+	position: absolute;
+	border: 1.5px solid black;
+	bottom: 0.25rem;
+	right: 0.25rem;
+}
+
+a.button-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	align-self: center;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 0.8rem;
+	text-decoration: none;
+	padding: 5px 0 0 3px;
+	a:visited {
+		color: #fff;
+	}
+}
+
+.header__box-right {
+	padding-right: 10rem;
+}
+
+.header__img {
+	width: 90%;
+	height: 20.5rem;
+}
+
+.products {
+	background-color: $lightgrey;
+	height: 40rem;
+	width: 100%;
+	position: relative;
+	top: -5rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.products__title {
+	font-size: 2.5rem;
+	font-weight: 300;
+	padding-top: 3rem;
+}
+
+@import './_card.scss';
+
+.products-button-div {
+	width: 5rem;
+	position: relative;
+}
+.landing {
+	margin: 0 auto;
+	width: 100%;
+	min-width: 300px;
+	// height: 40rem;
+}
+
+.landing-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.landing-left {
+	width: 40%;
+	align-self: flex-end;
+	margin-right: 10%;
+	padding-left: 10%;
+}
+
+.landing-right {
+	width: 40%;
+}
+
+#landing-link {
+	font-size: 3rem;
+	font-weight: lighter;
+	padding-bottom: 1rem;
+}
+.landing__text {
+	padding-top: 2rem;
+	width: 100%;
+	font-size: 1rem;
+}
+.landing__icons img {
+	width: 2.25rem;
+	display: inline-block;
+	margin: 1rem 1.5rem 1rem 0;
+}
+
+.landing__img-background {
+	width: 15rem;
+	height: 15rem;
+	background-image: url('../assets/coldbrewbackground.png');
+	background-size: contain;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.nitro {
+	margin-left: 1rem;
+	font-weight: 300;
+}
+img.landing__img {
+	position: absolute;
+	height: 10rem;
+	align-self: center;
+}
+
+.border--img {
+	width: 15rem;
+	height: 15rem;
+	border: 2px solid $lightblue;
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+}
+
+.landing-banner {
+	width: 85%;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	justify-self: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	border: 1px solid black;
+	background-color: black;
+	margin: 3rem auto;
+}
+
+.landing-banner__text {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	color: white;
+	background-color: black;
+	font-size: 1.5rem;
+}
+
+.bold {
+	font-weight: 300;
+}
+
+@import '_footer';
+
+// @import '_button';

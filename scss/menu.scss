@@ -1,0 +1,168 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+:root {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	max-width: 1440px;
+	min-width: 300px;
+	overflow: hidden-scrollable;
+	margin: 0 auto;
+	height: auto;
+	box-sizing: border-box;
+}
+
+// * {
+// 	margin: 0;
+// 	padding: 0;
+// 	box-sizing: border-box;
+// }
+
+// :root {
+// 	font-size: 16px;
+// 	font-family: 'Roboto', sans-serif;
+// 	font-weight: thin;
+// 	max-width: 1440px;
+// 	overflow: auto;
+// 	margin: 0 auto;
+// }
+
+@import '../scss/_nav-bar.scss';
+
+img {
+	height: auto;
+	max-width: 1440px;
+	display: block;
+}
+
+$white: #fff;
+$lightgrey: #f7f7f7f7;
+$pink: #fff0ed;
+$lightblue: #5bacc3;
+$black: rgba(0, 0, 0, 0.95);
+$menublack: #393939;
+
+// @import 'scss/_nav-bar.scss';
+
+.hero-container {
+	display: flex;
+	background-image: url('../assets/coffee-circle.jpg');
+	height: 53rem;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	top: -7.5rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+h1.hero__header {
+	font-size: 3rem;
+	font-weight: 100;
+	background-color: rgba(0, 0, 0, 0.85);
+	color: #f7f7f7f7;
+	padding: 4rem;
+	height: 11rem;
+	position: relative;
+	width: 17rem;
+	text-align: center;
+}
+
+.border-box {
+	border: 4px solid $lightblue;
+	offset: 15px;
+	width: 17.5rem;
+	height: 11.25rem;
+	position: absolute;
+	bottom: 0.7rem;
+	right: 0.45rem;
+}
+
+// .menu-nav {
+// 	display: flex;
+// 	background-color: #393939;
+// 	width: 100%;
+// 	height: 4rem;
+// 	position: relative;
+// 	bottom: 18rem;
+// 	display: flex;
+// 	justify-content: space-evenly;
+// 	align-items: center;
+// }
+
+// .menu-nav li {
+// 	list-style: none;
+// 	justify-content: center;
+// 	padding: 0 2rem;
+// }
+
+// .menu-nav a {
+// 	text-decoration: none;
+// 	color: white;
+// 	border-left: 2.5px solid #5bacc3;
+// 	padding-left: 1.5rem;
+// 	text-align: right;
+// }
+
+.main-menu {
+	position: relative;
+	top: -18rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+}
+
+.menu-header {
+	padding: 2rem 0 1rem 0;
+	font-size: 2.5rem;
+	font-weight: 300;
+	font-family: 'Roboto';
+}
+.menu-item {
+	font-size: 1.25rem;
+	padding: 0.5rem;
+}
+.menu-text {
+	align-self: center;
+	padding: 0 18rem 0 18rem;
+	font-weight: 100;
+	font-size: 1rem;
+	font-family: 'Roboto';
+	font-style: italic;
+}
+.menu-section--top,
+.menu-section--bottom {
+	width: 100%;
+	background-color: #fff0ed;
+	height: auto;
+}
+
+.menu-section--mid-section {
+	background-color: #f7f7f7f7;
+	width: 100%;
+}
+
+.price {
+	width: 100%;
+	color: #5bacc3;
+	font-style: normal;
+	padding: 1.5rem 0;
+	font-size: 1rem;
+}
